@@ -1,0 +1,28 @@
+/*
+ * style.css – Minimal overrides only.
+ * Bootstrap 5 handles all base styling via CDN.
+ * This file exists for any project-specific tweaks needed beyond Bootstrap.
+ */
+
+/* Custom scrollbar */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: #0f1117; }
+::-webkit-scrollbar-thumb { background: #2a3348; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #3a4f6e; }
+
+/* Smooth transitions */
+* { transition: border-color .15s ease, box-shadow .15s ease; }
+
+/* Bootstrap purple color fix (not in default Bootstrap palette) */
+.text-purple    { color: #a78bfa !important; }
+.bg-purple      { background-color: #a78bfa !important; }
+.border-purple  { border-color: #a78bfa !important; }
+.bg-purple.bg-opacity-20 { background-color: rgba(167,139,250,.2) !important; }
+
+/* Input group dark theme */
+.input-group-text {
+  background: #1a2240 !important;
+  border-color: #2a3348 !important;
+  color: #94a3b8 !important;
+  font-size: .875rem;
+}
